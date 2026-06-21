@@ -7,7 +7,6 @@ import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import UploadPage from './pages/UploadPage';
 import DocumentsPage from './pages/DocumentsPage';
-import SettingsPage from './pages/SettingsPage';
 
 function ProtectedRoute({ children }) {
   const { admin, loading } = useAuth();
@@ -77,7 +76,6 @@ export default function App() {
             <Route index element={<HomePage />} />
             <Route path="upload" element={<UploadPage />} />
             <Route path="documents" element={<DocumentsPage />} />
-            <Route path="settings" element={<SettingsPage />} />
           </Route>
           <Route path="/" element={<RootRedirect />} />
           <Route path="*" element={<RootRedirect />} />

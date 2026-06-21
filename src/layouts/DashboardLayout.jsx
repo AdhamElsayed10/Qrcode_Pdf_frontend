@@ -10,7 +10,6 @@ const nav = [
   { to: '/dashboard', icon: LayoutDashboard, label: 'Dashboard', end: true },
   { to: '/dashboard/upload', icon: Upload, label: 'Upload PDFs' },
   { to: '/dashboard/documents', icon: FileText, label: 'Documents' },
-  { to: '/dashboard/settings', icon: Settings, label: 'Settings' },
 ];
 
 export default function DashboardLayout() {
